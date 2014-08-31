@@ -1,0 +1,55 @@
+
+<form id="32642091">
+<property name="subject" value=""/>
+<property name="name" value="task_aprobar_credito-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="idSolicitud" type="InputTextInteger" id="348705398">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;idSolicitud (idSolicitud)quot;"/>
+<property name="inputBinding" value="idSolicitud"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="fechaNacimiento" type="InputText" id="1924838506">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;fechaNacimiento (fechaNacimiento)quot;"/>
+<property name="inputBinding" value="fechaNacimiento"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="dni" type="InputText" id="1136575603">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dni (dni)quot;"/>
+<property name="inputBinding" value="dni"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="observaciones" type="InputText" id="553793165">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;observaciones (observaciones)quot;"/>
+<property name="inputBinding" value="observaciones"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="nombreCliente" type="InputText" id="181191343">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nombreCliente (nombreCliente)quot;"/>
+<property name="inputBinding" value="nombreCliente"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="aprobada" type="InputText" id="1483993422">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprobada (aprobada)quot;"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="aprobada"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="aprobada" value="java.lang.String" id="aprobada"/>
+<dataHolder inputId="dni" name="#A7E690" type="basicType" outId="" value="java.lang.String" id="dni"/>
+<dataHolder inputId="fechaNacimiento" name="#B29FE4" type="basicType" outId="" value="java.lang.String" id="fechaNacimiento"/>
+<dataHolder inputId="idSolicitud" name="#0000A0" type="basicType" outId="" value="java.lang.Integer" id="idSolicitud"/>
+<dataHolder inputId="nombreCliente" name="#FF54A7" type="basicType" outId="" value="java.lang.String" id="nombreCliente"/>
+<dataHolder inputId="observaciones" name="#9BCAFA" type="basicType" outId="" value="java.lang.String" id="observaciones"/>
+</form>
