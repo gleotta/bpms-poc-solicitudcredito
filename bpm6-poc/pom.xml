@@ -68,7 +68,7 @@
 
 
 	<build>
-		<finalName>bpm-poc</finalName>
+		<finalName>bpm6-poc</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
