@@ -62,12 +62,23 @@ Password:
 >mvn clean install
 ```
 
-2.Ejecuto proyecto
+2. Ejecuto proyecto
 ```
 >java -jar target/bpm6-poc.jar [user_bpms] [password]
 ```
 
 > [user_bpms] es el usuarios de BPM Suite con privilegios de **admin**
+
+Resultado
+```
+[main] INFO  com.cuyum.BpmService  - Started process instance: ProcessInstance 1 [processId=altacredito.altacredito,state=1] 1
+[main] INFO  com.cuyum.MainClass  - Estado de la instancia del proceso: 1
+[main] INFO  com.cuyum.BpmService  - Task Verificar Datos Credito (1) for process instance 1
+[main] INFO  com.cuyum.BpmService  - Ubico la task 1: Verificar Datos Credito (Ready)
+[main] INFO  com.cuyum.BpmService  - Task Aprobar Credito (2) for process instance 1
+[main] INFO  com.cuyum.BpmService  - Ubico la task 2: Aprobar Credito (Ready)
+
+```
 
 
 2) Clases
