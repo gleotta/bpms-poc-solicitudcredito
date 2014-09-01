@@ -1,15 +1,17 @@
-bpms-poc-solicitudcredito
-=========================
+#bpms-poc-solicitudcredito
 
 POC usando BPMS JBPM6 
 
-1) Proceso de Aprobación de Credito Dummy
-Imagen en src/main/resources/altacredito.altacredito.png
-Archivo BPMN2 src/main/resources/org.jbpm.altacredito.bpmn2
+## Proceso de Aprobación de Credito Dummy
+Imagen en poc/src/main/resources/altacredito.altacredito-image.png
+![Proceso alta crédito](bpm6-poc/src/main/resources/altacredito.altacredito.png "Proceso alta credito")
+
+Archivo BPMN2 poc/src/main/resources/altacredito.bpmn2
+[Proceso bpmn2](poc/src/main/resources/altacredito.bpmn2 "Proceso bpmn2")
 
 Posee dos Tareas Humanas:
-Verificar Solicitud Credito -> Grupo: recepcion
-Aprobar Solicitud Credito -> Grupo: analista
+Verificar Solicitud Credito -> Grupo: recepcion, admim
+Aprobar Solicitud Credito -> Grupo: analista, admin
 
 
 2) Clases
