@@ -24,7 +24,7 @@ public class MainClass {
 		
 		if(args.length < 2 || args.length > 4)
         {
-            System.out.println("Usage: java -jar bpm-poc.jar username password [http://localhost:8080/business-central [com.cuyum.jbpm:poc:1.0]]");
+            System.out.println("Usage: java -jar bpm-poc.jar username password [http://localhost:8080/business-central [com.cuyum.jbpm:poc:1.1]]");
             return;
         }
 		PropertyConfigurator.configure("log4j.properties");
