@@ -1,6 +1,6 @@
 #bpms-poc-solicitudcredito
 
-POC usando BPMS JBPM6 
+POC usando KIE remotas de JBPM6 en Red Hat BPM Suite 6.0.1 
 
 ## Proceso de Aprobación de Credito Dummy
 Imagen en poc/src/main/resources/altacredito.altacredito-image.png
@@ -10,8 +10,29 @@ Archivo BPMN2 poc/src/main/resources/altacredito.bpmn2
 [Proceso bpmn2](poc/src/main/resources/altacredito.bpmn2 "Proceso bpmn2")
 
 Posee dos Tareas Humanas:
-Verificar Solicitud Credito -> Grupo: recepcion, admim
-Aprobar Solicitud Credito -> Grupo: analista, admin
+* Verificar Solicitud Credito -> Grupo: recepcion, admim
+* Aprobar Solicitud Credito -> Grupo: analista, admin
+
+##Requisitos
+1. Instalado RedHat BPM Suite 6.0.1
+2. Tener usuario configurado con permiso `admin`
+3. Instalado Oracle JDK 1.7 
+4. Instalado Maven 3.0.4 o superior
+4. Instalado git 1.8.x
+
+##Instalacion
+### 1. Clonar repositorio GIT
+
+```
+>cd $HOME/git
+>git clone https://github.com/gleotta/bpms-poc-solicitudcredito.git
+```
+> $HOME representa el directorio base del usuario, en Linux está en /home/**usuario** y en Winows en c:\\Users\\**usuario**
+
+###2. Importar proyecto `POC` a BPM Suite
+
+
+
 
 
 2) Clases
