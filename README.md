@@ -29,6 +29,9 @@ Posee dos Tareas Humanas:
 
 
 ##Instalación
+
+> Para poder realizar la mayoria de estos pasos el BPMS debe estar levantado
+
 ###1. Clonar repositorio GIT
 
 ```
@@ -61,7 +64,6 @@ Password:
 >cd $HOME/git/bpms-poc-solicitudcredito/bpm6-poc
 >mvn clean install
 ```
-
 2. Ejecuto proyecto
 ```
 >java -jar target/bpm6-poc.jar [user_bpms] [password]
@@ -80,32 +82,42 @@ Resultado
 
 ```
 
+###4. Construir y ejecutar **bpm6-poc-web**
+1. Edito archivo de propiedades **$HOME/git/bpms-poc-solicitudcredito/bpm6-poc-web/src/main/resources/bpms.properties**
+```
+#usuario de bpms con privilegio admin
+user = german
 
-2) Clases
-com.cuyum.BpmService: Facade de acceso a las KIE de jBPM
-com.cuyum.MainClass: Clase principal que se conecta al server de jBPM, crea una instancia 
-y ejecuta las tareas humanas a traves de BpmService.
+#contraseña de usuario con privilegio admin
+password = german123$
 
-3) Propiedades de conexión
-Dentro de com.cuyum.MainClass estan las propiedades para conectarse al servidor jBPM
+#URL de BPMS
+bpms.url = http://localhost:8080/business-central
 
-url = "http://[SERVER]:[PORT]/business-central/"; url del servidor de jbpm
-deploymentId = "pe.com.bcp:altacredito:1.0"; identificación de la unidad de deploy
-processDefinitionId = "altacredito.altacredito"; identifiación del proceso de alta de credito
-user = "user"; //usuario con roles: "recepcion", "analista" pass="a123456$";
-password = "pass"
+#id de unidad de deploy de proceo
+deployment.id = com.cuyum.jbpm:poc:1.1
+```
 
-4) Se puede usar contra el server 162.243.12.101:8080 que quedara disponible algunos dias
-Esta instancia tiene los siguientes usuarios:
-juan: recepcion
-jose: analista
-admibcrea: recepcion, analista
+2. Construyo proyecto
+```
+>cd $HOME/git/bpms-poc-solicitudcredito/bpm6-poc-web
+>mvn clean install
+```
 
-5) Se puede instalar un server propio de BPM Suite 6 y agregar los usuarios y roles rqueridos.
-Luego se debe importar el procesos bpmn2 y crera la unidad de deply que será utilizada por
-este POC
+3. Deployo **target/bpm6-poc-web** en EAP local o BPMS local
+```
+>cp target/bpm6-poc-web [EAP_HOME]/standalone/deployments
+```
+> [EAP_HOME] es el directorio base donde está instalado nuestro EAP o BPMS en el caso que usemos uno local
 
-Contacto: German Leotta <gleotta@servicios-redhat.com>
+4. Reinicio servidor EAP donde deplegué aplicación
+5. Ingreso a la aplicación *http://localhost:8080/bpm6-poc-web*
+6. Presionar boton *Crear Instancia*
+7. Se debe mostrar la info **Instancia Creada! (Nº 1)**
+
+
+German Leotta 
+gleotta@cuyum.com
 
 
 
