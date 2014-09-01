@@ -15,7 +15,7 @@ Posee dos Tareas Humanas:
 
 
 ##Contenido repositorio
-1. Proyecto **POC**: Kmodule conteniendo proceso altacredito.altacredito
+1. Proyecto **poc**: Kmodule conteniendo proceso altacredito.altacredito
 2. Proyecto **bpm6-poc**: Cliente java standalone que conume el proceso altacredito.altacredito a través de Kie Remotas
 3. Proyecto **bpm6-poc-web**: Aplicación WEB que crea nuevas instancias de altacredito.altacredito a través de Kie remotas
 
@@ -28,7 +28,7 @@ Posee dos Tareas Humanas:
 5. Instalado git 1.8.x
 
 
-##Instalacion
+##Instalación
 ### 1. Clonar repositorio GIT
 
 ```
@@ -37,7 +37,7 @@ Posee dos Tareas Humanas:
 ```
 > $HOME representa el directorio base del usuario, en Linux está en /home/**usuario** y en Winows en c:\\Users\\**usuario**
 
-###2. Importar proyecto **POC** a BPM Suite
+###2. Importar proyecto **poc** a BPM Suite
 1. Ingresar a BPM Suite (Ej. *http://localhost:8080/business-central*)
 2. Ir a *Autoria->Administración->Repositorios->Clonar Repositorio*
 3. Ingresar:
@@ -49,6 +49,12 @@ Username:
 Password:
 ```
 > Reemplazar [$HOME] or directorio base de usuario
+
+4. Ir a *Autoria-> Autoría de Proyectos -> example / bpms-poc-solicitudcredito / poc* 
+5. Ir a *Herramientas -> Editor de Proyectos -> Construcción & Implementación*
+6. Ir a *Implementar -> Implementaciones*  
+7. Verificar que exista implementado `com.cuyum.jbpm:poc:1.1`
+
 
 
 2) Clases
