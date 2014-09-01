@@ -29,7 +29,7 @@ Posee dos Tareas Humanas:
 
 
 ##Instalación
-### 1. Clonar repositorio GIT
+###1. Clonar repositorio GIT
 
 ```
 >cd $HOME/git
@@ -55,6 +55,19 @@ Password:
 6. Ir a *Implementar -> Implementaciones*  
 7. Verificar que exista implementado `com.cuyum.jbpm:poc:1.1`
 
+###3. Construir y ejecutar **bpm6-poc**
+1. Construyo proyecto
+```
+>cd $HOME/git/bpms-poc-solicitudcredito/bpm6-poc
+>mvn clean install
+```
+
+2.Ejecuto proyecto
+```
+>java -jar target/bpm6-poc.jar [user_bpms] [password]
+```
+
+> [user_bpms] es el usuarios de BPM Suite con privilegios de **admin**
 
 
 2) Clases
