@@ -13,12 +13,20 @@ Posee dos Tareas Humanas:
 * Verificar Solicitud Credito -> Grupo: recepcion, admim
 * Aprobar Solicitud Credito -> Grupo: analista, admin
 
+
+##Contenido repositorio
+1. Proyecto **POC**: Kmodule conteniendo proceso altacredito.altacredito
+2. Proyecto **bpm6-poc**: Cliente java standalone que conume el proceso altacredito.altacredito a través de Kie Remotas
+3. Proyecto **bpm6-poc-web**: Aplicación WEB que crea nuevas instancias de altacredito.altacredito a través de Kie remotas
+
+
 ##Requisitos
 1. Instalado RedHat BPM Suite 6.0.1
 2. Tener usuario configurado con permiso `admin`
 3. Instalado Oracle JDK 1.7 
 4. Instalado Maven 3.0.4 o superior
-4. Instalado git 1.8.x
+5. Instalado git 1.8.x
+
 
 ##Instalacion
 ### 1. Clonar repositorio GIT
@@ -29,10 +37,18 @@ Posee dos Tareas Humanas:
 ```
 > $HOME representa el directorio base del usuario, en Linux está en /home/**usuario** y en Winows en c:\\Users\\**usuario**
 
-###2. Importar proyecto `POC` a BPM Suite
-
-
-
+###2. Importar proyecto **POC** a BPM Suite
+1. Ingresar a BPM Suite (Ej. *http://localhost:8080/business-central*)
+2. Ir a *Autoria->Administración->Repositorios->Clonar Repositorio*
+3. Ingresar:
+```  
+Repository Name: bpms-poc-solicitudcredito
+Organizacional Unit: example
+Git URL: file://[$HOME]/git/bpms-poc-solicitudcredito/.git
+Username:
+Password:
+```
+> Reemplazar [$HOME] or directorio base de usuario
 
 
 2) Clases
