@@ -41,9 +41,9 @@ Posee dos Tareas Humanas:
 > $HOME representa el directorio base del usuario, en Linux está en /home/**usuario** y en Winows en c:\\Users\\**usuario**
 
 ###2. Importar proyecto **poc** a BPM Suite
-1. Ingresar a BPM Suite (Ej. *http://localhost:8080/business-central*)
-2. Ir a *Autoria->Administración->Repositorios->Clonar Repositorio*
-3. Ingresar:
+* 1) Ingresar a BPM Suite (Ej. *http://localhost:8080/business-central*)
+* 2) Ir a *Autoria->Administración->Repositorios->Clonar Repositorio*
+* 3) Ingresar:
 ```  
 Repository Name: bpms-poc-solicitudcredito
 Organizacional Unit: example
@@ -53,18 +53,18 @@ Password:
 ```
 > Reemplazar [$HOME] or directorio base de usuario
 
-4. Ir a *Autoria-> Autoría de Proyectos -> example / bpms-poc-solicitudcredito / poc* 
-5. Ir a *Herramientas -> Editor de Proyectos -> Construcción & Implementación*
-6. Ir a *Implementar -> Implementaciones*  
-7. Verificar que exista implementado `com.cuyum.jbpm:poc:1.1`
+* 4) Ir a *Autoria-> Autoría de Proyectos -> example / bpms-poc-solicitudcredito / poc* 
+* 5) Ir a *Herramientas -> Editor de Proyectos -> Construcción & Implementación*
+* 6) Ir a *Implementar -> Implementaciones*  
+* 7) Verificar que exista implementado `com.cuyum.jbpm:poc:1.1`
 
 ###3. Construir y ejecutar **bpm6-poc**
-1. Construyo proyecto
+* 1) Construyo proyecto
 ```
 >cd $HOME/git/bpms-poc-solicitudcredito/bpm6-poc
 >mvn clean install
 ```
-2. Ejecuto proyecto
+* 2) Ejecuto proyecto
 ```
 >java -jar target/bpm6-poc.jar [user_bpms] [password]
 ```
@@ -83,7 +83,7 @@ Resultado
 ```
 
 ###4. Construir y ejecutar **bpm6-poc-web**
-1. Edito archivo de propiedades **$HOME/git/bpms-poc-solicitudcredito/bpm6-poc-web/src/main/resources/bpms.properties**
+* 1) Edito archivo de propiedades **$HOME/git/bpms-poc-solicitudcredito/bpm6-poc-web/src/main/resources/bpms.properties**
 ```
 #usuario de bpms con privilegio admin
 user = german
@@ -98,25 +98,26 @@ bpms.url = http://localhost:8080/business-central
 deployment.id = com.cuyum.jbpm:poc:1.1
 ```
 
-2. Construyo proyecto
+* 2) Construyo proyecto
 ```
 >cd $HOME/git/bpms-poc-solicitudcredito/bpm6-poc-web
 >mvn clean install
 ```
 
-3. Deployo **target/bpm6-poc-web** en EAP local o BPMS local
+* 3) Deployo **target/bpm6-poc-web** en EAP local o BPMS local
 ```
 >cp target/bpm6-poc-web [EAP_HOME]/standalone/deployments
 ```
 > [EAP_HOME] es el directorio base donde está instalado nuestro EAP o BPMS en el caso que usemos uno local
 
-4. Reinicio servidor EAP donde deplegué aplicación
-5. Ingreso a la aplicación *http://localhost:8080/bpm6-poc-web*
-6. Presionar boton *Crear Instancia*
-7. Se debe mostrar la info **Instancia Creada! (Nº 1)**
+* 4) Reinicio servidor EAP donde deplegué aplicación
+* 5) Ingreso a la aplicación *http://localhost:8080/bpm6-poc-web*
+* 6)  Presionar boton *Crear Instancia*
+* 7) Se debe mostrar la info **Instancia Creada! (Nº 1)**
 
 
 German Leotta 
+
 gleotta@cuyum.com
 
 
