@@ -1,0 +1,94 @@
+
+<form id="1705179644">
+<property name="subject" value=""/>
+<property name="name" value="mobile-service-activation.serivce-activation-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="name" type="InputText" id="375084157">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Customer namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="serviceType" type="InputTextInteger" id="1894254455">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Mobile serivce type (1,2,3)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="serviceType"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="478135444">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value=""/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;dequot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;enquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;esquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;frquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;jaquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;ptquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;quot;zhquot;,quot;&lt;h3&gt;Mobile Service Activation Request:&lt;/h3&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<field position="3" name="documentId" type="CustomInput" id="1482544771">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Upload mobile servcie activatoin request formquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="size" value=""/>
+<property name="formula" value=""/>
+<property name="rangeFormula" value=""/>
+<property name="pattern" value=""/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="defaultValueFormula" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="documentId"/>
+<property name="customFieldType" value="org.jbpm.integration.ecm.FileCustomType"/>
+<property name="fieldClass" value="java.lang.String"/>
+<property name="param1" value=""/>
+<property name="param2" value=""/>
+<property name="param3" value=""/>
+<property name="param4" value=""/>
+<property name="param5" value=""/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="activate" value="java.lang.Boolean" id="activate"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="documentId" value="java.lang.String" id="documentId"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="name" value="java.lang.String" id="name"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="serviceType" value="java.lang.Integer" id="serviceType"/>
+</form>
